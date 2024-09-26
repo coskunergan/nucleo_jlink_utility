@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "cortex-debug",
+      "request": "launch",
+      "name": "Debug J-Link",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/build/zephyr/zephyr.elf",
+      "serverpath": "C:/Program Files (x86)/SEGGER/JLink_V620c/JLinkGDBServerCL.exe",
+      "servertype": "jlink",
+      "device": "A31T214",
+      "interface": "swd",
+      "serialNumber": "",
+      "runToMain": true,
+      "svdFile": "${workspaceRoot}/.vscode/a31t21x.svd"
+      //"svdFile": "${workspaceRoot}/.vscode/armcm0p.svd"
+    },
+    {
+      "name": "J-Link attach",
+      "cwd": "${workspaceRoot}",
+      "executable": "${workspaceRoot}/build/zephyr/zephyr.elf",
+      "request": "attach",
+      "type": "cortex-debug",
+      "serverpath": "C:/Program Files (x86)/SEGGER/JLink_V620c/JLinkGDBServerCL.exe",
+      "servertype": "jlink",
+      "device": "A31T214",
+      "interface": "swd",
+      "svdFile": "${workspaceRoot}/.vscode/a31t21x.svd"
+    }
+  ]
+}

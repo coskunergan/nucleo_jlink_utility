@@ -1,0 +1,1 @@
+It is an auxiliary voltage control software for a jlink on board debugger converted from stlink.

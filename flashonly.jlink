@@ -1,0 +1,9 @@
+device STM32F401RE
+r
+#erase
+loadfile build\zephyr\zephyr.hex
+r
+st
+hwinfo
+g
+q
